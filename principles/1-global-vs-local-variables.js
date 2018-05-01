@@ -9,20 +9,20 @@ function addStrings () {
 }
 
 // Uses no global variables
-function addStringsFP (parameter1, parameter2) {
+function addStringsFunctional (parameter1, parameter2) {
   return `${parameter1} ${parameter2}`
 }
 
 console.log(addStrings())
-console.log(addStringsFP(stringA, stringB))
+console.log(addStringsFunctional(stringA, stringB))
 
 stringA = 'Different'
 stringB = 'now'
 
 console.log(addStrings())
-console.log(addStringsFP(stringA, stringB))
+console.log(addStringsFunctional(stringA, stringB))
 
 module.exports = {
   addStrings,
-  addStringsFP
+  addStringsFunctional
 }
