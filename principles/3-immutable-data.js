@@ -2,18 +2,21 @@
 
 const obj = { name: 'bob', pet: 'cat' }
 
-function changeObject(obj) {
+// Changes the pet of the object
+function changePet(obj) {
   obj.pet = 'dog'
 }
 
-function changeObjectFunctional (obj) {
-  return { ...obj, pet: 'dog' }
+// Returns a new object with a changed pet
+function changePetFunctional (obj) {
+  return { ...obj, pet: 'fish' }
 }
 
 console.log('Calling functional programming fn')
-changeObjectFunctional(obj) // OK to delete
+console.log(changePetFunctional(obj))
+changePetFunctional(obj) // OK to delete
 console.log(obj)
 
 console.log('Calling imperative style programming fn')
-changeObject(obj)
+changePet(obj)
 console.log(obj)

@@ -1,13 +1,11 @@
 // In functional programming, functions should not give different outputs given the same inputs
 
 
-// For this person, the age can be different than what was assigned
+// For this person, the age can be different than what was assigned when the object was created
 function Person (name, age) {
   this.name = name
   this.age = age
-  this.birthday = () => {
-    this.age++
-  }
+  this.birthday = 
 }
 
 const person = new Person('cam', 24)
@@ -20,7 +18,7 @@ console.log(person.age)
 function FunctionalPerson (name, age) {
   this.name = name
   this.age = age
-  this.birthday = () => new Person (this.name, this.age + 1)
+  this.birthday = 
 }
 
 const functionalPerson = new FunctionalPerson('functional cam', 24)

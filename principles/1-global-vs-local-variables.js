@@ -21,8 +21,3 @@ stringB = 'now'
 
 console.log(addStrings())
 console.log(addStringsFunctional(stringA, stringB))
-
-module.exports = {
-  addStrings,
-  addStringsFunctional
-}

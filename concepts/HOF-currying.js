@@ -10,23 +10,46 @@ const double = num => num * 2
 const doThingTwice = fn => num => fn(fn(num))
 
 // Square a number twice
-console.log(doThingTwice(square)(2))
+console.log()
 
 // Square a number twice, twice
-console.log(doThingTwice(doThingTwice(square))(2))
+console.log()
 
 // Do a function four times
-const doThingFourTimes = fn => num => doThingTwice(doThingTwice(fn))(num)
+const doThingFourTimes = 
 
 // Double a number four times (input 5 => 80)
-console.log(doThingFourTimes(double)(5))
+console.log()
 
 // Broken back down into one doThingTwice
-console.log(doThingTwice(num => square(square(num)))(2))
+console.log()
 
  // Or broken down completely:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 console.log((num => 
   square(square(((innerNum) => 
     square(square(innerNum))
   )(num)))
 )(2))
+ */
